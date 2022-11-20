@@ -7,8 +7,8 @@ public class Player_2 extends Player{
         Scanner scanner = new Scanner(System.in);
         boolean selected = false;
         for (int i = 0; i < 5; i++){
-            System.out.println("Your card is: " + number + ". Would you like to pick again? Yes: 1, No: 0");
-            if(scanner.nextInt() == 1)
+            System.out.println("Your card is: " + number + ". Would you like to pick again? y/n");
+            if(scanner.next().equals("y"))
                 number = bet.pick_card();
             else break;
         }
